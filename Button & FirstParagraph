@@ -1,0 +1,9 @@
+// W PLIKU script.js dodałem poniższy kod, stworzyło mi przycisk + zmieniło kolor na zielony.
+
+const button = document.createElement("button");
+button.textContent = "Przycisk Maciej";
+
+document.body.appendChild(button);
+
+const firstParagraph = document.querySelector("p");
+firstParagraph.style.color = "green";
