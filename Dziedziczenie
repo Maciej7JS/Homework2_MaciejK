@@ -1,0 +1,23 @@
+// PRACA DOMOWA - DZIEDZICZENIE
+
+class Character {
+  constructor(name, health, level) {
+    this.name = name;
+    this.health = health;
+    this.level = level;
+  }
+
+attack() {
+  console.log(this.name + " wykonuje podstawowy atak");
+}
+
+takeDamage(amount) {
+  this.health -= amount;
+  console.log(this.name + " (lvl " +this.level + ") otrzymał " + amount + " obrażen. HP: " + this.health);
+  }
+}
+
+const hero = new Character("Warrior", 100, 99);
+
+hero.attack();
+hero.takeDamage(30);
